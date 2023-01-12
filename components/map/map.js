@@ -27,6 +27,7 @@ export default function Map(){
         iconAnchor: [10, 10]
     })
 
+
     return (
         <MapContainer className={style.map} center={position} zoom={14} scrollWheelZoom={true}>
             <TileLayer
@@ -37,6 +38,7 @@ export default function Map(){
             {kinggeorge.map( (station, index) => <Marker
                 position={[station.lat, station.lng]}
                 icon={markerIcon}
+                keyboard={false} // stops page from scrolling to top when map is clicked
                 >
                     <Popup>
                         {kinggeorge[index].station} Station
