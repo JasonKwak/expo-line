@@ -13,7 +13,7 @@ const TextCont = styled.div`
 display:flex;
 justify-content:center;
 align-items:center;
-background-color:black;
+background-color:#5C5346;
 flex-direction:column;
 text-align:center;
 padding: 1rem;
